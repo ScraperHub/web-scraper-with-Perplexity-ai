@@ -1,54 +1,31 @@
-# web-scraper-with-Perplexity-ai
+# How to Use Perplexity AI for Web Scraping in Python
 
-## 📝 Description
+We invite you to explore our [blog](https://crawlbase.com/blog/how-to-use-perlexity-ai-for-web-scraping/) for more details.
 
-This project demonstrates how to combine traditional web scraping with AI-powered structured data extraction using Perplexity AI. The scraper fetches product data from a website using requests and BeautifulSoup, converts it to Markdown with markdownify, and sends the content to Perplexity’s OpenAI-compatible API for intelligent JSON output.
+## Setting Up Your Coding Environment
 
-📖 Full tutorial available here: [How to Use Perplexity AI for Web Scraping](https://crawlbase.com/blog/how-to-use-perlexity-ai-for-web-scraping/)
+Before building the application, you’ll need to set up a basic Python environment. Follow these steps to get started:
 
-## 🔧 Setup Instructions
-
-### 1. Install Dependencies
+1. [Install Python 3](https://kinsta.com/knowledgebase/install-python/#how-to-install-python) on your system.
+2. Install the required dependencies by running: 
 
 ```bash
-pip install requests beautifulsoup4 openai markdownify
+python -m pip install -r requirements.txt
 ```
+
+## Obtaining Crawlbase API Credentials
+
+1. Create an account at [Crawlbase](https://crawlbase.com/signup) and log in.
+2. After registration, you will receive 5,000 free requests.
+3. Replace occurence of `<Private token>` with your Crawling API [Private token](https://crawlbase.com/dashboard/account/docs) under **Smart Proxy** section.
 
 ### 2. Get Perplexity AI API Key
 
-- Sign up at [Perplexity.ai](https://docs.perplexity.ai/guides/getting-started)
-- Use the OpenAI-compatible API key and set:
+1. Sign up at [Perplexity.ai](https://docs.perplexity.ai/guides/getting-started)
+2. Replace occurence of `<perplexity.ai API KEY>` with your OpenAI-compatible API key.
 
-```python
-client = OpenAI(api_key="YOUR_PERPLEXITY_API_KEY", base_url="https://api.perplexity.ai")
-```
-
-## 🚀 How to Run
+## How to Run
 
 ```bash
 python perplexity_ai_powered_scraper.py
 ```
-
-✅ The script will output structured product details like:
-
-```json
-{
-	"title": "A Light in the Attic",
-	"price": "£51.77",
-	"availability": "In stock"
-}
-```
-
-## 🛡 Bonus: Using Crawlbase Smart Proxy
-
-If the target website blocks your scraper, you can integrate [Crawlbase Smart Proxy](https://crawlbase.com/smart-proxy) to avoid bans and captchas. Just modify the `requests.get()` call:
-
-```python
-proxies = {
-    "http": "http://_USER_TOKEN_:@smartproxy.crawlbase.com:8012",
-    "https": "http://_USER_TOKEN_:@smartproxy.crawlbase.com:8012",
-}
-response = requests.get(url, headers=headers, proxies=proxies, verify=False)
-```
-
-🛠 Replace `_USER_TOKEN_` with your token from Crawlbase.
