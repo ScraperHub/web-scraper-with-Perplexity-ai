@@ -29,3 +29,6 @@ python -m pip install -r requirements.txt
 ```bash
 python perplexity_ai_powered_scraper.py
 ```
+---
+
+Copyright 2025 Crawlbase
