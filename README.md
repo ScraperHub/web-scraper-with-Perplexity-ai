@@ -1,6 +1,6 @@
 # How to Use Perplexity AI for Web Scraping in Python
 
-We invite you to explore our [blog](https://crawlbase.com/blog/how-to-use-perlexity-ai-for-web-scraping/?utm_source=github&utm_medium=referral&utm_campaign=scraperhub&ref=gh_scraperhub) for more details.
+We invite you to explore our [blog](https://crawlbase.com/blog/how-to-use-perplexity-ai-for-web-scraping/?utm_source=github&utm_medium=referral&utm_campaign=scraperhub&ref=gh_scraperhub) for more details.
 
 ## Setting Up Your Coding Environment
 
